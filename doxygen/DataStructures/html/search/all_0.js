@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readme',['README',['../md__home_ankigupt_DataStructures_README.html',1,'']]],
-  ['readme_2emd',['README.md',['../README_8md.html',1,'']]]
+  ['data',['data',['../structnode__t.html#aa69340d9d81a183ddfbfec74a7524966',1,'node_t']]]
 ];
