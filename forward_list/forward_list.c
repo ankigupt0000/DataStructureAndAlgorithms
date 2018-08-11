@@ -34,7 +34,7 @@ int push_front(void* val){
     NODE* new_node = (NODE *) malloc(sizeof(NODE));
     if(new_node == NULL)
     {
-        fprintf(stderr,"Allocation Error: %s",stderr(errno));
+        fprintf(stderr,"Allocation Error: %s",strerr(errno));
         return errno;
     }
     new_node ->next_node = start;
