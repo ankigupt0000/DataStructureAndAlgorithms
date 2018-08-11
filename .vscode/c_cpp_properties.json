@@ -4,8 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:\\TDM-GCC-32\\include\\",
-                "C:\\TDM-GCC-32\\lib\\gcc\\mingw32\\5.1.0\\include\\"
+                "C:\\MinGW\\include",
+                "C:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include"
             ],
             "defines": [
                 "_DEBUG",
