@@ -7,6 +7,7 @@
  * @details forward_list similar as STL forward_list like C++
  */
 #include <stdio.h>
+#include <stdlib.h>
 #include "forward_list.h"
 
 /**
@@ -28,10 +29,10 @@ NODE** before_begin(){
  * 
  * @param val 
  */
-push_front(void* val){
+void push_front(void* val){
     NODE* new_node = (NODE *) malloc(sizeof(NODE));
     new_node ->next_node = start;
-    new_node ->data = val;
+    new_node -> data = val;
     start = new_node;
 }
 

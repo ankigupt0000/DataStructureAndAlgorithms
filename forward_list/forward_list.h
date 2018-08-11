@@ -12,8 +12,8 @@
  * @typedef node_t NODE 
  */
 typedef struct node_t{
-   void* data;           /**< @var data pointer to void generic data holder */
-   NODE* next_node;      /**< @var next_node pointer to next node */
+   void* data;                    /**< @var data pointer to void generic data holder */
+   struct node_t* next_node;      /**< @var next_node pointer to next node */
 } NODE;
 
 /**
@@ -28,4 +28,4 @@ NODE** before_begin();
  * 
  * @param val 
  */
-push_front(void* val);
+void push_front(void* val);
