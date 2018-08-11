@@ -14,3 +14,24 @@
  */
 static NODE* start=NULL;
 
+/**
+ * @brief returns address of pointer to first node.
+ * 
+ * @return NODE**
+ */
+NODE** before_begin(){
+    return &start;
+}
+
+/**
+ * @brief Construct a new push front object
+ * 
+ * @param val 
+ */
+push_front(void* val){
+    NODE* new_node = (NODE *) malloc(sizeof(NODE));
+    new_node ->next_node = start;
+    new_node ->data = val;
+    start = new_node;
+}
+

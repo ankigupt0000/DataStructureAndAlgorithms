@@ -16,3 +16,16 @@ typedef struct node_t{
    NODE* next_node;      /**< @var next_node pointer to next node */
 } NODE;
 
+/**
+ * @brief returns address of pointer to first node.
+ * 
+ * @return NODE**
+ */
+NODE** before_begin();
+
+/**
+ * @brief Construct a new push front object
+ * 
+ * @param val 
+ */
+push_front(void* val);
