@@ -15,3 +15,4 @@ typedef struct node_t{
    void* data;           /**< @var data pointer to void generic data holder */
    NODE* next_node;      /**< @var next_node pointer to next node */
 } NODE;
+

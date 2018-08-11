@@ -6,13 +6,11 @@
  * @date 2018-08-10
  * @details forward_list similar as STL forward_list like C++
  */
+#include <stdio.h>
+#include "forward_list.h"
 
 /**
- * @brief main function which print "Hello World"
- * 
- * @return int 
+ * @var[start] pointer to start of the list
  */
-int main()
-{
-    print("Hello World!");
-}
+static NODE* start=NULL;
+
