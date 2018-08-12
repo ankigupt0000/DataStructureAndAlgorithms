@@ -11,8 +11,16 @@
  * @brief structure for forward_list node
  * @typedef node_t NODE 
  */
+#define set_type(T) typedef T stype_t; 
+
+#ifndef TYPE
+#define TYPE int
+typedef int stype_t;
+#endif
+
+
 typedef struct node_t{
-   void* data;                    /**< @var data pointer to void generic data holder */
+   stype_t data;                    /**< @var data pointer to void generic data holder */
    struct node_t* next_node;      /**< @var next_node pointer to next node */
 } NODE;
 
@@ -28,4 +36,4 @@ NODE** before_begin();
  * 
  * @param val 
  */
-int push_front(void* val);
+int push_front(stype_t val);
