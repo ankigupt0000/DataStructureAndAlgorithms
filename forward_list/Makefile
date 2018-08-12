@@ -9,4 +9,4 @@ main_test.o: main_test.c
 forward_list.o: forward_list.c
 	gcc -o $@ -c $<
 clean:
-	rm forwardlist_test forward_list.o main_test.o
+	rm forwardlist_test forwardlist_test.exe forward_list.o main_test.o
