@@ -28,4 +28,4 @@ NODE** before_begin();
  * 
  * @param val 
  */
-void push_front(void* val);
+int push_front(void* val);
