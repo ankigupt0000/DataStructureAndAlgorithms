@@ -7,9 +7,10 @@
  * @details forward_list similar as STL forward_list like C++
  */
 #include <stdio.h>
-#include <errno.h>
+#include <error.h>
 #include <stdlib.h>
 #include "forward_list.h"
+
 
 /**
  * @var[start] pointer to start of the list
@@ -30,15 +31,16 @@ NODE** before_begin(){
  * 
  * @param val 
  */
-int push_front(void* val){
+int push_front(stype_t* val){
     NODE* new_node = (NODE *) malloc(sizeof(NODE));
+    new_node -> data = (stype_t *) malloc(sizeof(stype_t));
     if(new_node == NULL)
     {
-        fprintf(stderr,"Allocation Error: %s",strerr(errno));
+        fprintf(stderr,"Allocation Error: %ld",errno);
         return errno;
     }
     new_node ->next_node = start;
-    new_node -> data = val;
+    *(new_node -> data) = *val;
     start = new_node;
 }
 
