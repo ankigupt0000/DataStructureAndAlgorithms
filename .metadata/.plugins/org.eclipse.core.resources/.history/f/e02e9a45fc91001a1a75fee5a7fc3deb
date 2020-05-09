@@ -1,0 +1,4 @@
+
+void
+stackPush(stack *s, void* data);
+

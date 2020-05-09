@@ -1,0 +1,20 @@
+
+#ifndef STACK
+#define STACK 1
+const int STACK_EMPTY=0;
+#endif
+
+typedef struct elt *stack;
+
+void
+stackPush(stack *s, void* data);
+
+int
+stackEmpty(const stack *s);
+
+void*
+stackPop(stack *s);
+
+void
+stackPrint(const stack *s);
+

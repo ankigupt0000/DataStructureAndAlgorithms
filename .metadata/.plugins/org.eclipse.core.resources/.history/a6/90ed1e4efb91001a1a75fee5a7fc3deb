@@ -1,0 +1,10 @@
+
+struct elt{
+	struct elt *next;
+	void* data;
+};
+
+typedef struct elt *stack;
+
+const int STACK_EMPTY=0;
+

@@ -1,0 +1,12 @@
+
+
+typedef struct elt *stack;
+
+void
+stackPush(stack *s, void* data);
+
+int
+stackEmpty(const stack *s);
+
+
+

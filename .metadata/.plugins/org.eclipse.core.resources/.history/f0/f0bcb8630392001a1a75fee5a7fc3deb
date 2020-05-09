@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "stack.h"
+
+typedef float dt;
+
+int
+main(int argc, char** argv)
+{
+	dt* m;
+	int i;
+	stack s;
+
+	s = STACK_EMPTY;
+
+	for(i = 0; i < 5; i++){
+		m = malloc(sizeof(dt));
+		*m = (dt)i;
+		printf("push %d\n", *m);
+		stackPush(&s,m);
+	}
+
+
+	while(!stackEmpty(&s)){
+		m = (dt *)stackPop(&s);
+		printf("pop gets %d\n",*m);
+		free(m);
+	}
+}

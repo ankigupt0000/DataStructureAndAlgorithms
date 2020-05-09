@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "stack.h"
+
+int
+main(int argc, char** argv)
+{
+	int* m;
+	int i;
+	stack s;
+
+	s = STACK_EMPTY;
+
+	printf("Staring Push");
+	for(i = 0; i < 5; i++){
+		m = malloc(sizeof(int));
+		*m = i;
+		printf("push %d\n", *m);
+		stackPush(&s,m);
+	}
+
+
+	while(!stackEmpty(&s)){
+		printf("pop gets %d\n", *((int *)stackPop(&s)));
+	}
+}

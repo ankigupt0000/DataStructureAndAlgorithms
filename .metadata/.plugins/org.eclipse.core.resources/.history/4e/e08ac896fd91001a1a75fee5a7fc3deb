@@ -1,0 +1,7 @@
+
+
+typedef struct elt *stack;
+
+void
+stackPush(stack *s, void* data);
+

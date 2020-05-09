@@ -1,0 +1,9 @@
+CC = gcc
+CFLAGS = -Wall -std=c99
+PROG = stack
+OBJS = $(PROG).o
+
+#$(PROG): $(OBJS)
+#	$(CC) $(CFLAGS) -o $@ $^	
+$(OBJS): $(PROG).c
+	$(CC) $(CFLAGS) -c -o $@ $^

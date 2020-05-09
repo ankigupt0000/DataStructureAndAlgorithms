@@ -1,0 +1,21 @@
+#include "stack.h"
+
+int
+main(int argc, char** argv)
+{
+	int i;
+	stack s;
+
+	s = STACK_EMPTY;
+
+	for(i = 0; i < 5; i++){
+		printf("push %d\n", i);
+		stackPush(&s,(void *)i);
+		stackPrint(&s);
+	}
+
+	while(!stackEmpty(&s)){
+		printf("pop gets %d\n", stackPop(&s));
+		stackPrint(&s);
+	}
+}

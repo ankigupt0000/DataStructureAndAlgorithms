@@ -1,0 +1,22 @@
+#include <assert.h>
+#include <stdlib.h>
+#include "stack.h"
+
+struct elt{
+	struct elt *next;
+	void* data;
+};
+
+const int STACK_EMPTY=0;
+
+void
+stackPush(stack *s, void* data)
+{
+	stack e;
+	e=malloc(sizeof(stack));
+	assert(e);
+
+	e->data = data;
+	e->next = *s;
+	*s=e;
+}
