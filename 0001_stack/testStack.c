@@ -28,7 +28,7 @@ main(int argc, char** argv)
 
 
 	while(!stackEmpty(&s)){
-		m = (dt *)stackPop(&s);
+		m = stackPop(&s);
 		printf("pop gets %d %f\n",m->i, m->j);
 		free(m);
 	}

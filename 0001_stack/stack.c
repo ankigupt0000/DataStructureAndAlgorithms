@@ -3,7 +3,7 @@
 #include "stack.h"
 
 struct elt{
-	struct elt *next;
+	stack next;
 	void* data;
 };
 
@@ -11,7 +11,7 @@ void
 stackPush(stack *s, void* data)
 {
 	stack e;
-	e=malloc(sizeof(stack));
+	e=malloc(sizeof(struct elt));
 	assert(e);
 
 	e->data = data;
@@ -22,7 +22,7 @@ stackPush(stack *s, void* data)
 int
 stackEmpty(const stack *s)
 {
-	return (*s == 0);
+	return (*s == STACK_EMPTY);
 }
 
 void*

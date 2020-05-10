@@ -1,7 +1,7 @@
 
 #define STACK_EMPTY (0)
 
-typedef struct elt *stack;
+typedef struct elt* stack;
 
 void
 stackPush(stack *s, void* data);
